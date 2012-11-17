@@ -26,5 +26,9 @@
 	    reply-timeout="5000"
 	    reply-channel="quakeinfo.channel">	    
 	</int-http:outbound-gateway>
+	
+	<int:logging-channel-adapter id="messageLogger" log-full-message="true" channel="quakeinfo.channel" level="ERROR">
+		<int:poller fixed-delay="5000" ></int:poller>
+	</int:logging-channel-adapter>
 
 </beans>
