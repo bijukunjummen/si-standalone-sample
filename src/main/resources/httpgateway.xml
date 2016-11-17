@@ -19,7 +19,7 @@
 
 	<int-http:outbound-gateway id="quakerHttpGateway"
 	    request-channel="quakeinfotrigger.channel"
-	    url="http://earthquake.usgs.gov/earthquakes/feed/geojson/all/hour"
+	    url="http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
 	    http-method="GET"
 	    expected-response-type="java.lang.String"
 	    charset="UTF-8"
